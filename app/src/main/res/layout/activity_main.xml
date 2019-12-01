@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tvInfo7"
+        android:layout_width="180dp"
+        android:layout_height="18dp"
+        android:text="@string/firstName"
+        app:layout_constraintBottom_toTopOf="@+id/etFirstName"
+        app:layout_constraintEnd_toStartOf="@+id/tvInfo8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNum"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/numPints"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etYear"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo5" />
+
+    <EditText
+        android:id="@+id/etYear"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/year"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btAdd"
+        app:layout_constraintEnd_toStartOf="@+id/etNum"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo4" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/lastName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfo5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo8" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/firstName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfo4"
+        app:layout_constraintEnd_toStartOf="@+id/etLastName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInfo7" />
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="180dp"
+        android:layout_height="36dp"
+        android:onClick="addBt"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/btDelete"
+        app:layout_constraintEnd_toStartOf="@+id/btDisplay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etYear" />
+
+    <Button
+        android:id="@+id/btDisplay"
+        android:layout_width="180dp"
+        android:layout_height="36dp"
+        android:onClick="displayBt"
+        android:text="@string/display"
+        app:layout_constraintBottom_toTopOf="@+id/btDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btAdd"
+        app:layout_constraintTop_toBottomOf="@+id/etNum" />
+
+    <Button
+        android:id="@+id/btDelete"
+        android:layout_width="165dp"
+        android:layout_height="36dp"
+        android:onClick="deleteBt"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toTopOf="@+id/tvDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAdd" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="359dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDisplay" />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="356dp"
+        android:layout_height="172dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btDelete" />
+
+    <TextView
+        android:id="@+id/tvInfo8"
+        android:layout_width="180dp"
+        android:layout_height="18dp"
+        android:text="@string/lastName"
+        app:layout_constraintBottom_toTopOf="@+id/etLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvInfo7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInfo4"
+        android:layout_width="180dp"
+        android:layout_height="19dp"
+        android:text="@string/year"
+        app:layout_constraintBottom_toTopOf="@+id/etYear"
+        app:layout_constraintEnd_toStartOf="@+id/tvInfo5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstName" />
+
+    <TextView
+        android:id="@+id/tvInfo5"
+        android:layout_width="180dp"
+        android:layout_height="19dp"
+        android:text="@string/numPints"
+        app:layout_constraintBottom_toTopOf="@+id/etNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvInfo4"
+        app:layout_constraintTop_toBottomOf="@+id/etLastName" />
+
+</android.support.constraint.ConstraintLayout>

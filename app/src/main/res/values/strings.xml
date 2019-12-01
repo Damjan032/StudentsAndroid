@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Work with students</string>
+    <string name="firstName">First name</string>
+    <string name="lastName">Last name</string>
+    <string name="year">Year of registration</string>
+    <string name="numPints">Number of points</string>
+    <string name="add">Add students</string>
+    <string name="display">Display table</string>
+    <string name="delete">Delete table</string>
+</resources>
